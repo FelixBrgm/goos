@@ -81,7 +81,7 @@
             bindings = <
 &none   &kp N6         &kp N5        &kp N4        &kp MINUS                      &kp C_BRI_UP  &none           &none         &none             &kp C_VOL_UP
 &kp N0  &rpi LCTRL N3  &rpi LALT N2  &rpi LGUI N1  &kp PLUS                       &kp LEFT      &rpi LGUI DOWN  &rpi LALT UP  &rpi LCTRL RIGHT  &kp C_VOL_DN
-&none   &kp N9         &kp N8        &kp N7        &kp STAR                       &kp C_BRI_DN  &kp C_PREV      &kp C_PP      &kp C_NEXT        &kp C_MUTE
+&none   &kp N9         &kp N8        &kp N7        &kp STAR                       &kp C_BRI_DN  &kp C_PREV      &kp C_PP      &kp C_NEXT        &kp K_MUTE
                                      &none         &none      &none    &kp ENTER  &none         &kp BSPC
             >;
 
