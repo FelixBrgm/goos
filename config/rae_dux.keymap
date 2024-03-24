@@ -42,11 +42,6 @@
             key-positions = <8 28>;
         };
 
-        Alpha {
-            bindings = <&tog 0>;
-            key-positions = <0 20>;
-        };
-
         Space {
             bindings = <&kp SPACE>;
             key-positions = <13 12 11>;
