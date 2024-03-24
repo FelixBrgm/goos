@@ -99,10 +99,10 @@
 
         Into_the_breach {
             bindings = <
-&none  &none   &none   &none   &none                  &none  &none  &none  &none  &none
-&kp R  &kp N3  &kp N2  &kp N1  &none                  &none  &none  &none  &none  &none
-&none  &none   &none   &none   &none                  &none  &none  &none  &none  &none
-                       &kp S   &kp A  &kp D    &none  &none  &none
+&none  &none           &none   &none   &none                  &none  &none  &none  &none  &none
+&kp R  &kp LEFT_SHIFT  &kp N2  &kp N1  &none                  &none  &none  &none  &none  &none
+&none  &none           &none   &none   &none                  &none  &none  &none  &none  &none
+                               &kp S   &kp A  &kp D    &none  &none  &none
             >;
 
             label = "itb_layer";
