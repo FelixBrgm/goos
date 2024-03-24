@@ -99,9 +99,9 @@
 
         Into_the_breach {
             bindings = <
-&none  &none           &none   &none   &none                  &none  &none  &none  &none  &none
-&kp R  &kp LEFT_SHIFT  &kp N2  &kp N1  &none                  &none  &none  &none  &none  &none
-&none  &none           &none   &none   &none                  &none  &none  &none  &none  &none
+&none           &none  &none   &none   &none                  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT  &kp R  &kp N2  &kp N1  &none                  &none  &none  &none  &none  &none
+&none           &none  &none   &none   &none                  &none  &none  &none  &none  &none
                                &kp S   &kp A  &kp D    &none  &none  &none
             >;
 
