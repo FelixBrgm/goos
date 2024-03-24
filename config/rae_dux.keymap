@@ -1,0 +1,125 @@
+/*
+ * Copyright (c) 2021 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+&lt {
+    quick_tap_ms = <150>;
+    flavor = "hold-preferred";
+};
+
+/ {
+    conditional_layers { compatible = "zmk,conditional-layers"; };
+
+    behaviors {
+        rpi: require_prior_idle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "REQUIRE_PRIOR_IDLE";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <250>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        Into_the_breach {
+            bindings = <&tog 0>;
+            key-positions = <9 29>;
+        };
+
+        Gamepad {
+            bindings = <&tog 3>;
+            key-positions = <8 28>;
+        };
+
+        Alpha {
+            bindings = <&tog 0>;
+            key-positions = <0 20>;
+        };
+
+        Space {
+            bindings = <&kp SPACE>;
+            key-positions = <13 12 11>;
+            layers = <4>;
+        };
+
+        Settings {
+            bindings = <&tog 5>;
+            key-positions = <7 27>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        alpha_layer {
+            bindings = <
+&kp Q  &kp W         &kp F        &kp P        &kp B    &kp J      &kp L        &kp U        &kp Y         &kp SEMI
+&kp A  &rpi LCTRL R  &rpi LALT S  &rpi LGUI T  &kp G    &kp M      &rpi LGUI N  &rpi LALT E  &rpi LCTRL I  &kp O
+&kp Z  &kp X         &kp C        &kp D        &kp V    &kp K      &kp H        &kp COMMA    &kp DOT       &kp SLASH
+                     &kp LSHFT    &lt 2 SPACE  &kp TAB  &kp ENTER  &mo 1        &kp BSPC
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&none      &kp BACKSLASH    &kp CARET       &kp PERCENT     &none      &none     &kp DQT         &kp EXCL        &kp HASH         &none
+&kp MINUS  &rpi LCTRL LBRC  &rpi LALT LBKT  &rpi LGUI LPAR  &kp TILDE  &kp PIPE  &rpi LGUI RPAR  &rpi LALT RBKT  &rpi LCTRL RBRC  &kp EQUAL
+&none      &kp GRAVE        &kp UNDER       &kp AT          &none      &none     &kp SQT         &kp AMPS        &kp DOLLAR       &none
+                            &kp LSHFT       &none           &kp TAB    &none     &none           &none
+            >;
+
+            label = "symbol_layer";
+        };
+
+        Numbers_Navigation {
+            bindings = <
+&none   &kp N6         &kp N5        &kp N4        &kp MINUS  &kp C_BRI_UP  &none           &none         &none             &kp C_VOL_UP
+&kp N0  &rpi LCTRL N3  &rpi LALT N2  &rpi LGUI N1  &kp PLUS   &kp LEFT      &rpi LGUI DOWN  &rpi LALT UP  &rpi LCTRL RIGHT  &kp C_VOL_DN
+&none   &kp N9         &kp N8        &kp N7        &kp STAR   &kp C_BRI_DN  &kp C_PREV      &kp C_PP      &kp C_NEXT        &kp C_MUTE
+                       &none         &none         &none      &kp ENTER     &none           &kp BSPC
+            >;
+
+            label = "numb_nav_layer";
+        };
+
+        gamepad {
+            bindings = <
+&kp ESC  &kp Q  &kp W      &kp E      &kp R  &none  &kp L     &kp UP    &kp R      &none
+&kp TAB  &kp A  &kp S      &kp D      &kp F  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&none    &kp Y  &kp X      &kp C      &none  &none  &kp S     &none     &kp E      &none
+                &kp LSHFT  &kp SPACE  &none  &kp B  &kp A     &none
+            >;
+        };
+
+        Into_the_breach {
+            bindings = <
+&none  &none   &none   &none   &none  &none  &none  &none  &none  &none
+&none  &kp N3  &kp N2  &kp N1  &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none  &none  &none  &none  &none  &none
+               &kp S   &kp A   &kp D  &none  &none  &none
+            >;
+
+            label = "itb_layer";
+        };
+
+        settings_layer {
+            bindings = <
+&none  &none  &none  &none  &none  &bt BT_SEL 1   &none         &none       &none       &none
+&none  &none  &none  &none  &none  &bt BT_SEL 2   &bt BT_SEL 0  &bt BT_NXT  &bt BT_CLR  &none
+&none  &none  &none  &none  &none  &bt BT_SEL 03  &none         &none       &none       &none
+              &none  &none  &none  &none          &none         &none
+            >;
+        };
+    };
+};
