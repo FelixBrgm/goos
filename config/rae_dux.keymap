@@ -49,15 +49,20 @@
             key-positions = <8 28>;
         };
 
-        Space {
-            bindings = <&kp SPACE>;
-            key-positions = <13 12 11>;
-            layers = <5>;
-        };
-
         Settings {
             bindings = <&tog 6>;
             key-positions = <7 27>;
+        };
+
+        ITB_Space {
+            bindings = <&kp SPACE>;
+            key-positions = <11 12 13>;
+            layers = <5>;
+        };
+
+        Escape {
+            bindings = <&kp ESC>;
+            key-positions = <13 16>;
         };
     };
 
@@ -97,9 +102,9 @@
 
         Tri {
             bindings = <
-&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
-&none  &none  &kp A  &kp T  &none                  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                  &none  &none           &none  &none  &none
+&none  &none  &none  &none  &none                  &none  &kp LG(LS(N4))  &none  &none  &none
+&none  &none  &none  &none  &none                  &none  &none           &none  &none  &none
                      &none  &none  &none    &none  &none  &none
             >;
 
