@@ -14,7 +14,14 @@
 };
 
 / {
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Tri {
+            if-layers = <0 2>;
+            then-layer = <3>;
+        };
+    };
 
     behaviors {
         rpi: require_prior_idle {
@@ -33,23 +40,23 @@
         compatible = "zmk,combos";
 
         Into_the_breach {
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <9 29>;
         };
 
         Gamepad {
-            bindings = <&tog 3>;
+            bindings = <&tog 4>;
             key-positions = <8 28>;
         };
 
         Space {
             bindings = <&kp SPACE>;
             key-positions = <13 12 11>;
-            layers = <4>;
+            layers = <5>;
         };
 
         Settings {
-            bindings = <&tog 5>;
+            bindings = <&tog 6>;
             key-positions = <7 27>;
         };
     };
@@ -86,6 +93,17 @@
             >;
 
             label = "numb_nav_layer";
+        };
+
+        Tri {
+            bindings = <
+&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
+            >;
+
+            label = "tri_layer";
         };
 
         gamepad {
