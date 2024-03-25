@@ -98,7 +98,7 @@
         Tri {
             bindings = <
 &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+&none  &none  &kp A  &kp T  &none                  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
                      &none  &none  &none    &none  &none  &none
             >;
