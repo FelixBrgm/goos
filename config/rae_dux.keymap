@@ -76,7 +76,7 @@
 
         Numbers_Navigation {
             bindings = <
-&none   &kp N6         &kp N5        &kp N4        &kp MINUS                      &kp C_BRI_UP  &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &bt BT_SEL 0
+&none   &kp N6         &kp N5        &kp N4        &kp MINUS                      &kp C_BRI_UP  &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &bt BT_SEL 0
 &kp N0  &hrm LCTRL N3  &hrm LALT N2  &hrm LGUI N1  &kp PLUS                       &kp LEFT      &hrm LGUI DOWN  &hrm LALT UP       &hrm LCTRL RIGHT  &bt BT_SEL 1
 &none   &kp N9         &kp N8        &kp N7        &kp STAR                       &kp C_BRI_DN  &kp C_PREV      &kp C_PP           &kp C_NEXT        &bt BT_CLR
                                      &none         &none      &none    &kp ENTER  &mo 1         &kp BSPC
