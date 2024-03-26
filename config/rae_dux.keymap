@@ -46,13 +46,18 @@
 
         Settings {
             bindings = <&tog 6>;
-            key-positions = <7 27>;
+            key-positions = <27 7>;
         };
 
         ITB_Space {
             bindings = <&kp SPACE>;
             key-positions = <11 12 13>;
             layers = <5>;
+        };
+
+        Bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 20>;
         };
     };
 
