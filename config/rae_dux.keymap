@@ -55,9 +55,14 @@
             layers = <5>;
         };
 
-        Bootloader {
+        Bootloader_left {
             bindings = <&bootloader>;
-            key-positions = <0 20>;
+            key-positions = <30 31 32 11 12 13>;
+        };
+
+        Bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <33 34 35 16 17 18>;
         };
     };
 
