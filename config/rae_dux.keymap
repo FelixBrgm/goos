@@ -44,11 +44,6 @@
             key-positions = <8 28>;
         };
 
-        Settings {
-            bindings = <&tog 6>;
-            key-positions = <20 0 29 9>;
-        };
-
         ITB_Space {
             bindings = <&kp SPACE>;
             key-positions = <11 12 13>;
@@ -119,15 +114,6 @@
             >;
 
             label = "itb_layer";
-        };
-
-        settings_layer {
-            bindings = <
-&none  &none  &none  &none  &bootloader                  &bootloader  &none  &none  &none  &none
-&none  &none  &none  &none  &none                        &none        &none  &none  &none  &none
-&none  &none  &none  &none  &none                        &none        &none  &none  &none  &none
-                     &none  &none        &none    &none  &none        &none
-            >;
         };
     };
 };
