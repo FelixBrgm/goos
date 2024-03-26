@@ -46,23 +46,13 @@
 
         Settings {
             bindings = <&tog 6>;
-            key-positions = <27 7>;
+            key-positions = <20 0 29 9>;
         };
 
         ITB_Space {
             bindings = <&kp SPACE>;
             key-positions = <11 12 13>;
             layers = <5>;
-        };
-
-        Bootloader_left {
-            bindings = <&bootloader>;
-            key-positions = <0 20 24 4>;
-        };
-
-        Bootloader_right {
-            bindings = <&bootloader>;
-            key-positions = <5 25 29 9>;
         };
     };
 
@@ -133,10 +123,10 @@
 
         settings_layer {
             bindings = <
-&none  &none  &none  &none  &none                  &bt BT_SEL 1   &none         &none       &none       &none
-&none  &none  &none  &none  &none                  &bt BT_SEL 2   &bt BT_SEL 0  &bt BT_NXT  &bt BT_CLR  &none
-&none  &none  &none  &none  &none                  &bt BT_SEL 03  &none         &none       &none       &none
-                     &none  &none  &none    &none  &none          &none
+&none  &none  &none  &none  &none                        &bt BT_SEL 1   &none         &none       &none       &none
+&none  &none  &none  &none  &none                        &bt BT_SEL 2   &bt BT_SEL 0  &bt BT_NXT  &bt BT_CLR  &none
+&none  &none  &none  &none  &none                        &bt BT_SEL 03  &none         &none       &none       &none
+                     &none  &bootloader  &none    &none  &bootloader    &none
             >;
         };
     };
