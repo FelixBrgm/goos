@@ -1,4 +1,4 @@
-* rae-dux
+* Goos
 If you want to have a look at the keymap just fork this repo and open it with [this editor](https://nickcoutsos.github.io/keymap-editor)
 
 
