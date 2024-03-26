@@ -81,9 +81,9 @@
 
         Numbers_Navigation {
             bindings = <
-&none   &kp N6         &kp N5        &kp N4        &kp MINUS                      &kp C_BRI_UP  &none           &none         &none             &kp C_VOL_UP
-&kp N0  &hrm LCTRL N3  &hrm LALT N2  &hrm LGUI N1  &kp PLUS                       &kp LEFT      &hrm LGUI DOWN  &hrm LALT UP  &hrm LCTRL RIGHT  &kp C_VOL_DN
-&none   &kp N9         &kp N8        &kp N7        &kp STAR                       &kp C_BRI_DN  &kp C_PREV      &kp C_PP      &kp C_NEXT        &kp K_MUTE
+&none   &kp N6         &kp N5        &kp N4        &kp MINUS                      &kp C_BRI_UP  &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &bt BT_SEL 0
+&kp N0  &hrm LCTRL N3  &hrm LALT N2  &hrm LGUI N1  &kp PLUS                       &kp LEFT      &hrm LGUI DOWN  &hrm LALT UP       &hrm LCTRL RIGHT  &bt BT_SEL 1
+&none   &kp N9         &kp N8        &kp N7        &kp STAR                       &kp C_BRI_DN  &kp C_PREV      &kp C_PP           &kp C_NEXT        &bt BT_CLR
                                      &none         &none      &none    &kp ENTER  &mo 1         &kp BSPC
             >;
 
@@ -92,10 +92,10 @@
 
         Tri {
             bindings = <
-&none  &none  &none  &none  &none                  &none  &none           &none  &none  &none
-&none  &none  &none  &none  &none                  &none  &kp LG(LS(N4))  &none  &none  &none
-&none  &none  &none  &none  &none                  &none  &none           &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
+&bootloader  &none  &none  &none  &none                  &none  &none           &none  &none  &bootloader
+&none        &none  &none  &none  &none                  &none  &kp LG(LS(N4))  &none  &none  &none
+&none        &none  &none  &none  &none                  &none  &none           &none  &none  &none
+                           &none  &none  &none    &none  &none  &none
             >;
 
             label = "tri_layer";
@@ -123,10 +123,10 @@
 
         settings_layer {
             bindings = <
-&none  &none  &none  &none  &none                        &bt BT_SEL 1   &none         &none       &none       &none
-&none  &none  &none  &none  &none                        &bt BT_SEL 2   &bt BT_SEL 0  &bt BT_NXT  &bt BT_CLR  &none
-&none  &none  &none  &none  &none                        &bt BT_SEL 03  &none         &none       &none       &none
-                     &none  &bootloader  &none    &none  &bootloader    &none
+&none  &none  &none  &none  &bootloader                  &bootloader  &none  &none  &none  &none
+&none  &none  &none  &none  &none                        &none        &none  &none  &none  &none
+&none  &none  &none  &none  &none                        &none        &none  &none  &none  &none
+                     &none  &none        &none    &none  &none        &none
             >;
         };
     };
