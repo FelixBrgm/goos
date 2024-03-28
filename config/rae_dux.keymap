@@ -29,6 +29,16 @@
             tapping-term-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
+
+        lt_rep: lt_rep {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_REP";
+            bindings = <&mo>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -56,10 +66,10 @@
 
         alpha_layer {
             bindings = <
-&kp Q  &kp W         &kp F        &kp P        &kp B                              &kp J      &kp L        &kp U        &kp Y         &kp SEMI
-&kp A  &hrm LCTRL R  &hrm LALT S  &hrm LGUI T  &kp G                              &kp M      &hrm LGUI N  &hrm LALT E  &hrm LCTRL I  &kp O
-&kp Z  &kp X         &kp C        &kp D        &kp V                              &kp K      &kp H        &kp COMMA    &kp DOT       &kp SLASH
-                                  &kp LSHFT    &lt 2 SPACE  &kp TAB    &kp ENTER  &lt 1 ESC  &kp BSPC
+&kp Q            &kp W         &kp F              &kp P        &kp B                              &kp J        &kp L        &kp U               &kp Y         &kp SEMI
+&hrm LEFT_ALT A  &hrm LCTRL R  &hrm LEFT_SHIFT S  &hrm LGUI T  &kp G                              &kp M        &hrm LGUI N  &hrm RIGHT_SHIFT E  &hrm LCTRL I  &hrm RIGHT_ALT O
+&kp Z            &kp X         &kp C              &kp D        &kp V                              &kp K        &kp H        &kp COMMA           &kp DOT       &kp SLASH
+                                                  &kp ESC      &lt 2 SPACE  &kp TAB    &kp ENTER  &lt_rep 1 0  &kp BSPC
             >;
         };
 
