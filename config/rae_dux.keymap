@@ -30,9 +30,9 @@
             bindings = <&kp>, <&kp>;
         };
 
-        lt_rep: lt_rep {
+        lt_repeat: lt_repeat {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_REP";
+            label = "LT_REPEAT";
             bindings = <&mo>, <&key_repeat>;
 
             #binding-cells = <2>;
@@ -66,10 +66,10 @@
 
         alpha_layer {
             bindings = <
-&kp Q            &kp W         &kp F              &kp P        &kp B                              &kp J        &kp L        &kp U               &kp Y         &kp SEMI
-&hrm LEFT_ALT A  &hrm LCTRL R  &hrm LEFT_SHIFT S  &hrm LGUI T  &kp G                              &kp M        &hrm LGUI N  &hrm RIGHT_SHIFT E  &hrm LCTRL I  &hrm RIGHT_ALT O
-&kp Z            &kp X         &kp C              &kp D        &kp V                              &kp K        &kp H        &kp COMMA           &kp DOT       &kp SLASH
-                                                  &kp ESC      &lt 2 SPACE  &kp TAB    &kp ENTER  &lt_rep 1 0  &kp BSPC
+&kp Q            &kp W         &kp F              &kp P        &kp B                              &kp J           &kp L        &kp U               &kp Y         &kp SEMI
+&hrm LEFT_ALT A  &hrm LCTRL R  &hrm LEFT_SHIFT S  &hrm LGUI T  &kp G                              &kp M           &hrm LGUI N  &hrm RIGHT_SHIFT E  &hrm LCTRL I  &hrm RIGHT_ALT O
+&kp Z            &kp X         &kp C              &kp D        &kp V                              &kp K           &kp H        &kp COMMA           &kp DOT       &kp SLASH
+                                                  &kp ESC      &lt 2 SPACE  &kp TAB    &kp ENTER  &lt_repeat 1 0  &kp BSPC
             >;
         };
 
