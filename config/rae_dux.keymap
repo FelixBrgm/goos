@@ -26,8 +26,18 @@
             label = "HOME_ROW_MODS";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
+        };
+
+        lt_repeat: lt_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_REPEAT";
+            bindings = <&mo>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
         };
     };
 
@@ -56,19 +66,19 @@
 
         alpha_layer {
             bindings = <
-&kp Q  &kp W         &kp F        &kp P        &kp B                              &kp J      &kp L        &kp U        &kp Y         &kp SEMI
-&kp A  &hrm LCTRL R  &hrm LALT S  &hrm LGUI T  &kp G                              &kp M      &hrm LGUI N  &hrm LALT E  &hrm LCTRL I  &kp O
-&kp Z  &kp X         &kp C        &kp D        &kp V                              &kp K      &kp H        &kp COMMA    &kp DOT       &kp SLASH
-                                  &kp LSHFT    &lt 2 SPACE  &kp TAB    &kp ENTER  &lt 1 ESC  &kp BSPC
+&kp Q            &kp W         &kp F              &kp P        &kp B                              &kp J           &kp L        &kp U               &kp Y         &kp SEMI
+&hrm LEFT_ALT A  &hrm LCTRL R  &hrm LEFT_SHIFT S  &hrm LGUI T  &kp G                              &kp M           &hrm LGUI N  &hrm RIGHT_SHIFT E  &hrm LCTRL I  &hrm RIGHT_ALT O
+&kp Z            &kp X         &kp C              &kp D        &kp V                              &kp K           &kp H        &kp COMMA           &kp DOT       &kp SLASH
+                                                  &kp ESC      &lt 2 SPACE  &kp TAB    &kp ENTER  &lt_repeat 1 0  &kp BSPC
             >;
         };
 
         Symbol {
             bindings = <
-&none      &kp BACKSLASH    &kp CARET       &kp PERCENT     &none                        &none     &kp DQT         &kp EXCL        &kp HASH         &none
-&kp MINUS  &hrm LCTRL LBRC  &hrm LALT LBKT  &hrm LGUI LPAR  &kp TILDE                    &kp PIPE  &hrm LGUI RPAR  &hrm LALT RBKT  &hrm LCTRL RBRC  &kp EQUAL
-&none      &kp GRAVE        &kp UNDER       &kp AT          &none                        &none     &kp SQT         &kp AMPS        &kp DOLLAR       &none
-                                            &kp LSHFT       &mo 2      &kp TAB    &none  &none     &none
+&none                &kp BACKSLASH    &kp CARET             &kp PERCENT     &none                        &none     &kp DQT         &kp EXCL               &kp HASH         &none
+&hrm LEFT_ALT MINUS  &hrm LCTRL LBRC  &hrm LEFT_SHIFT LBKT  &hrm LGUI LPAR  &kp TILDE                    &kp PIPE  &hrm LGUI RPAR  &hrm RIGHT_SHIFT RBKT  &hrm LCTRL RBRC  &hrm RIGHT_ALT EQUAL
+&none                &kp GRAVE        &kp UNDER             &kp AT          &none                        &none     &kp SQT         &kp AMPS               &kp DOLLAR       &none
+                                                            &kp ESC         &mo 2      &kp TAB    &none  &none     &none
             >;
 
             label = "symbol_layer";
@@ -76,10 +86,10 @@
 
         Numbers_Navigation {
             bindings = <
-&none   &kp N6         &kp N5        &kp N4        &kp MINUS                      &kp C_BRI_UP  &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &bt BT_SEL 0
-&kp N0  &hrm LCTRL N3  &hrm LALT N2  &hrm LGUI N1  &kp PLUS                       &kp LEFT      &hrm LGUI DOWN  &hrm LALT UP       &hrm LCTRL RIGHT  &bt BT_SEL 1
-&none   &kp N9         &kp N8        &kp N7        &kp STAR                       &kp C_BRI_DN  &kp C_PREV      &kp C_PP           &kp C_NEXT        &bt BT_CLR
-                                     &none         &none      &none    &kp ENTER  &mo 1         &kp BSPC
+&none             &kp N6         &kp N5              &kp N4        &kp MINUS                      &kp C_BRI_UP  &kp C_MUTE      &kp C_VOLUME_DOWN    &kp C_VOLUME_UP   &none
+&hrm LEFT_ALT N0  &hrm LCTRL N3  &hrm LEFT_SHIFT N2  &hrm LGUI N1  &kp PLUS                       &kp LEFT      &hrm LGUI DOWN  &hrm RIGHT_SHIFT UP  &hrm LCTRL RIGHT  &kp RIGHT_ALT
+&none             &kp N9         &kp N8              &kp N7        &kp STAR                       &kp C_BRI_DN  &kp C_PREV      &kp C_PP             &kp C_NEXT        &none
+                                                     &none         &none      &none    &kp ENTER  &mo 1         &kp BSPC
             >;
 
             label = "numb_nav_layer";
@@ -87,10 +97,10 @@
 
         Tri {
             bindings = <
-&bootloader  &none  &none  &none  &none                  &none  &none           &none  &none  &bootloader
-&none        &none  &none  &none  &none                  &none  &kp LG(LS(N4))  &none  &none  &none
-&none        &none  &none  &none  &none                  &none  &none           &none  &none  &none
-                           &none  &none  &none    &none  &none  &none
+&bootloader   &none  &none  &none  &none                  &none  &none           &none  &none  &bootloader
+&bt BT_SEL 0  &none  &none  &none  &none                  &none  &kp LG(LS(N4))  &none  &none  &none
+&bt BT_CLR    &none  &none  &none  &none                  &none  &none           &none  &none  &none
+                            &none  &none  &none    &none  &none  &none
             >;
 
             label = "tri_layer";
