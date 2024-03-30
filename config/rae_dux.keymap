@@ -75,10 +75,10 @@
 
         Symbol {
             bindings = <
-&none                &kp BACKSLASH    &kp CARET             &kp PERCENT     &none                        &none     &kp DQT         &kp EXCL               &kp HASH         &none
-&hrm LEFT_ALT MINUS  &hrm LCTRL LBRC  &hrm LEFT_SHIFT LBKT  &hrm LGUI LPAR  &kp TILDE                    &kp PIPE  &hrm LGUI RPAR  &hrm RIGHT_SHIFT RBKT  &hrm LCTRL RBRC  &hrm RIGHT_ALT EQUAL
-&none                &kp GRAVE        &kp UNDER             &kp AT          &none                        &none     &kp SQT         &kp AMPS               &kp DOLLAR       &none
-                                                            &kp ESC         &mo 2      &kp TAB    &none  &none     &none
+&none                      &kp SINGLE_QUOTE          &kp DOLLAR             &kp AT_SIGN           &kp CARET                    &none          &kp POUND        &kp LEFT_BRACKET                   &kp RIGHT_BRACKET             &none
+&hrm LEFT_ALT EXCLAMATION  &hrm LCTRL DOUBLE_QUOTES  &hrm LEFT_SHIFT MINUS  &hrm LGUI UNDERSCORE  &kp PLUS                     &kp PLUS       &hrm LGUI ASTRK  &hrm RIGHT_SHIFT LEFT_PARENTHESIS  &hrm LCTRL RIGHT_PARENTHESIS  &hrm RIGHT_ALT PERCENT
+&none                      &kp GRAVE                 &kp PIPE               &kp EQUAL             &kp TILDE                    &kp BACKSLASH  &kp AMPERSAND    &kp LEFT_BRACE                     &kp RIGHT_BRACE               &none
+                                                                            &kp ESC               &mo 2      &kp TAB    &none  &none          &none
             >;
 
             label = "symbol_layer";
