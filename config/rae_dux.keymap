@@ -75,9 +75,9 @@
 
         Symbol {
             bindings = <
-&none                      &kp SINGLE_QUOTE          &kp DOLLAR             &kp AT_SIGN           &kp CARET                    &none          &kp POUND        &kp LEFT_BRACKET                   &kp RIGHT_BRACKET             &none
+&none                      &kp SINGLE_QUOTE          &kp DOLLAR             &kp AMPERSAND         &kp CARET                    &none          &kp POUND        &kp LEFT_BRACKET                   &kp RIGHT_BRACKET             &none
 &hrm LEFT_ALT EXCLAMATION  &hrm LCTRL DOUBLE_QUOTES  &hrm LEFT_SHIFT MINUS  &hrm LGUI UNDERSCORE  &kp PLUS                     &kp PLUS       &hrm LGUI ASTRK  &hrm RIGHT_SHIFT LEFT_PARENTHESIS  &hrm LCTRL RIGHT_PARENTHESIS  &hrm RIGHT_ALT PERCENT
-&none                      &kp GRAVE                 &kp PIPE               &kp EQUAL             &kp TILDE                    &kp BACKSLASH  &kp AMPERSAND    &kp LEFT_BRACE                     &kp RIGHT_BRACE               &none
+&none                      &kp GRAVE                 &kp PIPE               &kp EQUAL             &kp TILDE                    &kp BACKSLASH  &kp AT_SIGN      &kp LEFT_BRACE                     &kp RIGHT_BRACE               &none
                                                                             &kp ESC               &mo 2      &kp TAB    &none  &none          &none
             >;
 
