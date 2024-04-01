@@ -80,8 +80,8 @@
 
         alpha_layer_qwerty {
             bindings = <
-&kp Q            &kp W         &kp E              &kp P        &kp T                              &kp Y           &kp U        &kp I               &kp O         &kp P
-&hrm LEFT_ALT A  &hrm LCTRL S  &hrm LEFT_SHIFT D  &hrm LGUI F  &kp G                              &kp M           &hrm LGUI J  &hrm RIGHT_SHIFT K  &hrm LCTRL L  &hrm RIGHT_ALT SEMICOLON
+&kp Q            &kp W         &kp E              &kp R        &kp T                              &kp Y           &kp U        &kp I               &kp O         &kp P
+&hrm LEFT_ALT A  &hrm LCTRL S  &hrm LEFT_SHIFT D  &hrm LGUI F  &kp G                              &kp H           &hrm LGUI J  &hrm RIGHT_SHIFT K  &hrm LCTRL L  &hrm RIGHT_ALT SEMICOLON
 &kp Z            &kp X         &kp C              &kp V        &kp B                              &kp N           &kp M        &kp COMMA           &kp DOT       &kp SLASH
                                                   &kp ESC      &lt 3 SPACE  &kp TAB    &kp ENTER  &lt_repeat 2 0  &kp BSPC
             >;
