@@ -45,19 +45,13 @@
         compatible = "zmk,combos";
 
         Into_the_breach {
-            bindings = <&tog 5>;
+            bindings = <&tog 0>;
             key-positions = <9 29>;
         };
 
         Gamepad {
             bindings = <&tog 4>;
             key-positions = <8 28>;
-        };
-
-        ITB_Space {
-            bindings = <&kp SPACE>;
-            key-positions = <11 12 13>;
-            layers = <5>;
         };
     };
 
@@ -113,17 +107,6 @@
 &none    &kp Y  &kp X  &kp C      &none                      &none  &kp S     &none     &kp E      &none
                        &kp LSHFT  &kp SPACE  &none    &kp B  &kp A  &none
             >;
-        };
-
-        Into_the_breach {
-            bindings = <
-&none           &none  &none   &none   &none                  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT  &kp R  &kp N2  &kp N1  &none                  &none  &none  &none  &none  &none
-&none           &none  &none   &none   &none                  &none  &none  &none  &none  &none
-                               &kp S   &kp A  &kp D    &none  &none  &none
-            >;
-
-            label = "itb_layer";
         };
     };
 };
