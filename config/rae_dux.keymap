@@ -64,10 +64,10 @@
 
         Symbol {
             bindings = <
-&none                      &kp SINGLE_QUOTE          &kp DOLLAR             &kp AMPERSAND         &kp CARET                    &none          &kp POUND        &kp LEFT_BRACKET                   &kp RIGHT_BRACKET             &none
-&hrm LEFT_ALT EXCLAMATION  &hrm LCTRL DOUBLE_QUOTES  &hrm LEFT_SHIFT MINUS  &hrm LGUI UNDERSCORE  &kp PLUS                     &kp PLUS       &hrm LGUI ASTRK  &hrm RIGHT_SHIFT LEFT_PARENTHESIS  &hrm LCTRL RIGHT_PARENTHESIS  &hrm RIGHT_ALT PERCENT
-&none                      &kp GRAVE                 &kp PIPE               &kp EQUAL             &kp TILDE                    &kp BACKSLASH  &kp AT_SIGN      &kp LEFT_BRACE                     &kp RIGHT_BRACE               &none
-                                                                            &kp ESC               &mo 2      &kp TAB    &none  &none          &none
+&none                          &kp SINGLE_QUOTE             &kp DOLLAR               &kp AMPERSAND               &kp CARET                    &none          &kp POUND               &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &none
+&hrm LEFT_CONTROL EXCLAMATION  &hrm LEFT_ALT DOUBLE_QUOTES  &hrm LEFT_COMMAND MINUS  &hrm LEFT_SHIFT UNDERSCORE  &kp PLUS                     &kp PLUS       &hrm RIGHT_SHIFT ASTRK  &hrm RIGHT_COMMAND LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_CONTROL PERCENT
+&none                          &kp GRAVE                    &kp PIPE                 &kp EQUAL                   &kp TILDE                    &kp BACKSLASH  &kp AT_SIGN             &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &none
+                                                                                     &kp ESC                     &mo 2      &kp TAB    &none  &none          &none
             >;
 
             label = "symbol_layer";
@@ -75,10 +75,10 @@
 
         Numbers_Navigation {
             bindings = <
-&none             &kp NUMBER_9   &kp NUMBER_8        &kp NUMBER_7  &kp MINUS                      &kp C_BRI_UP  &kp C_MUTE      &kp C_VOLUME_DOWN    &kp C_VOLUME_UP   &none
-&hrm LEFT_ALT N0  &hrm LCTRL N3  &hrm LEFT_SHIFT N2  &hrm LGUI N1  &kp PLUS                       &kp LEFT      &hrm LGUI DOWN  &hrm RIGHT_SHIFT UP  &hrm LCTRL RIGHT  &kp RIGHT_ALT
-&none             &kp NUMBER_6   &kp NUMBER_5        &kp NUMBER_4  &kp STAR                       &kp C_BRI_DN  &kp C_PREV      &kp C_PP             &kp C_NEXT        &none
-                                                     &none         &none      &none    &kp ENTER  &mo 1         &kp BSPC
+&none                 &kp NUMBER_9      &kp NUMBER_8          &kp NUMBER_7        &kp MINUS                      &kp C_BRI_UP  &kp C_MUTE             &kp C_VOLUME_DOWN      &kp C_VOLUME_UP       &none
+&hrm LEFT_CONTROL N0  &hrm LEFT_ALT N3  &hrm LEFT_COMMAND N2  &hrm LEFT_SHIFT N1  &kp PLUS                       &kp LEFT      &hrm RIGHT_SHIFT DOWN  &hrm RIGHT_COMMAND UP  &hrm RIGHT_ALT RIGHT  &kp RIGHT_CONTROL
+&none                 &kp NUMBER_6      &kp NUMBER_5          &kp NUMBER_4        &kp STAR                       &kp C_BRI_DN  &kp C_PREV             &kp C_PP               &kp C_NEXT            &none
+                                                              &none               &none      &none    &kp ENTER  &mo 1         &kp BSPC
             >;
 
             label = "numb_nav_layer";
