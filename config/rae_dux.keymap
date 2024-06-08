@@ -1,0 +1,107 @@
+/*
+ * Copyright (c) 2021 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+&lt { flavor = "hold-preferred"; };
+
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Tri {
+            if-layers = <2 1>;
+            then-layer = <3>;
+        };
+    };
+
+    behaviors {
+        hrm: home_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_MODS";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        lt_repeat: lt_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_REPEAT";
+            bindings = <&mo>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        Gamepad {
+            bindings = <&tog 4>;
+            key-positions = <8 28>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        alpha_layer_qwerty {
+            bindings = <
+&kp Q                &kp W            &kp E                &kp R              &kp T                              &kp Y           &kp U               &kp I                 &kp O             &kp P
+&hrm LEFT_CONTROL A  &hrm LEFT_ALT S  &hrm LEFT_COMMAND D  &hrm LEFT_SHIFT F  &kp G                              &kp H           &hrm RIGHT_SHIFT J  &hrm RIGHT_COMMAND K  &hrm RIGHT_ALT L  &hrm RIGHT_CONTROL SEMICOLON
+&kp Z                &kp X            &kp C                &kp V              &kp B                              &kp N           &kp M               &kp COMMA             &kp DOT           &kp SLASH
+                                                           &kp ESC            &lt 2 SPACE  &kp TAB    &kp ENTER  &lt_repeat 1 0  &kp BSPC
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&none                          &kp SINGLE_QUOTE             &kp DOLLAR               &kp AMPERSAND               &kp CARET                    &none          &kp POUND               &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &none
+&hrm LEFT_CONTROL EXCLAMATION  &hrm LEFT_ALT DOUBLE_QUOTES  &hrm LEFT_COMMAND MINUS  &hrm LEFT_SHIFT UNDERSCORE  &kp PLUS                     &kp PLUS       &hrm RIGHT_SHIFT ASTRK  &hrm RIGHT_COMMAND LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_CONTROL PERCENT
+&none                          &kp GRAVE                    &kp PIPE                 &kp EQUAL                   &kp TILDE                    &kp BACKSLASH  &kp AT_SIGN             &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &none
+                                                                                     &kp ESC                     &mo 2      &kp TAB    &none  &none          &none
+            >;
+
+            label = "symbol_layer";
+        };
+
+        Numbers_Navigation {
+            bindings = <
+&none                 &kp NUMBER_9      &kp NUMBER_8          &kp NUMBER_7        &kp MINUS                      &kp C_BRI_UP  &kp C_MUTE             &kp C_VOLUME_DOWN      &kp C_VOLUME_UP       &none
+&hrm LEFT_CONTROL N0  &hrm LEFT_ALT N3  &hrm LEFT_COMMAND N2  &hrm LEFT_SHIFT N1  &kp PLUS                       &kp LEFT      &hrm RIGHT_SHIFT DOWN  &hrm RIGHT_COMMAND UP  &hrm RIGHT_ALT RIGHT  &kp RIGHT_CONTROL
+&none                 &kp NUMBER_6      &kp NUMBER_5          &kp NUMBER_4        &kp STAR                       &kp C_BRI_DN  &kp C_PREV             &kp C_PP               &kp C_NEXT            &none
+                                                              &none               &none      &none    &kp ENTER  &mo 1         &kp BSPC
+            >;
+
+            label = "numb_nav_layer";
+        };
+
+        Tri {
+            bindings = <
+&bootloader   &none  &none  &none  &none                  &none  &none           &none  &none  &bootloader
+&bt BT_SEL 0  &none  &none  &none  &none                  &none  &kp LG(LS(N4))  &none  &none  &none
+&bt BT_CLR    &none  &none  &none  &none                  &none  &none           &none  &none  &none
+                            &none  &none  &none    &none  &none  &none
+            >;
+
+            label = "tri_layer";
+        };
+
+        gamepad {
+            bindings = <
+&kp ESC  &kp Q  &kp W  &kp E      &kp R                      &none  &kp L     &kp UP    &kp R      &none
+&kp TAB  &kp A  &kp S  &kp D      &kp F                      &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&none    &kp Y  &kp X  &kp C      &none                      &none  &kp S     &none     &kp E      &none
+                       &kp LSHFT  &kp SPACE  &none    &kp B  &kp A  &none
+            >;
+        };
+    };
+};
