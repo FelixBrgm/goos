@@ -14,3 +14,8 @@ A keyboard inspired by and base on [rae-dux](https://github.com/andrewjrae/rae-d
 
 ### Keymap
 If you want to have a look at the keymap just fork this repo and open it with [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
+![Alpha Layer](https://i.imgur.com/9O0QuCG.png)
+![Symbol Layer](https://i.imgur.com/6udqeZL.png)
+![Numbers/Nav Layer](https://i.imgur.com/38qrMfV.png)
+![Macro Layer](https://i.imgur.com/p13jDE0.png)
+![Game Layer](https://i.imgur.com/46FRrPh.png)
