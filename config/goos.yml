@@ -1,8 +1,8 @@
 file_format: "1"
 id: goos
-name: rae-dux
+name: goos
 type: shield
-url: https://github.com/andrewjrae/rae-dux
+url: https://github.com/felixbrgm/goos
 requires: [pro_micro]
 features:
   - keys
