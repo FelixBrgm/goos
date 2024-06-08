@@ -430,7 +430,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "goos.kicad_pro",
+    "filename": "goos-left.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -465,7 +465,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
