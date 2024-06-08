@@ -1,5 +1,5 @@
 file_format: "1"
-id: rae_dux
+id: goos
 name: rae-dux
 type: shield
 url: https://github.com/andrewjrae/rae-dux
@@ -7,5 +7,5 @@ requires: [pro_micro]
 features:
   - keys
 siblings:
-  - rae_dux_left
-  - rae_dux_right
+  - goos_left
+  - goos_right
