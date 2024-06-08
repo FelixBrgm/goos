@@ -28,5 +28,5 @@ If you want to have a look at the keymap just fork this repo and open it with [K
 `Macro layer activated by holding down both middle thumb keys`
 ![Macro Layer](https://i.imgur.com/p13jDE0.png)
 
-`Game layer activated by hitting the combo right-top && right-bottom keys`
+`Game layer toggled by hitting the combo right-top && right-bottom keys`
 ![Game Layer](https://i.imgur.com/46FRrPh.png)
