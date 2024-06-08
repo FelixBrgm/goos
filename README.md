@@ -13,7 +13,7 @@ A keyboard inspired by and base on [rae-dux](https://github.com/andrewjrae/rae-d
 7. A goos!
 
 ### Keymap
-If you want to have a look at the keymap just fork this repo and open it with [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
+If you want to change the keymap, just fork this repo and open it with [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
 ![Alpha Layer](https://i.imgur.com/9O0QuCG.png)
 
 `Colemak-DH layer toggled by hitting the combo left-top && left-bottom keys`
