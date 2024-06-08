@@ -1,0 +1,103 @@
+(footprint "bat-connector"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "PAD1"
+		(at 0.25 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "698aa423-593d-4844-9b1f-3a6e0a612db2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0.25 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "65a1f38e-1941-4212-8d32-5cf23e57f18b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 1 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7623e71a-746f-491e-8cc8-61ba87df08b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 1 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8024857-85ff-4372-921c-525eaaf51387")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 1 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a19f7b5d-841e-45c0-bbaf-52a1b042e80e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_text user "B+"
+		(at 1 1.75 0)
+		(layer "F.SilkS")
+		(uuid "32da7c2b-7ccf-4ee0-bec4-2df67d98e585")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "B-"
+		(at -1 1.75 0)
+		(layer "F.SilkS")
+		(uuid "f84a752f-5dfe-4bcd-ad98-7e801690d341")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1 0)
+		(size 1.5 2.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "2b6f7e83-f86b-455b-a94f-69cb39c4da96")
+	)
+	(pad "2" smd roundrect
+		(at 1 0)
+		(size 1.5 2.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "1d7d69de-1a8d-4142-a047-0d18776a4f60")
+	)
+)

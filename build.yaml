@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: rae_dux_left
+    shield: goos_left
   - board: nice_nano_v2
-    shield: rae_dux_right
+    shield: goos_right
   - board: nice_nano_v2
     shield: settings_reset

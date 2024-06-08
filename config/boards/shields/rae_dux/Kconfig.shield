@@ -1,8 +1,8 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_RAE_DUX_LEFT
-	def_bool $(shields_list_contains,rae_dux_left)
+config SHIELD_GOOS_LEFT
+	def_bool $(shields_list_contains,goos_left)
 
-config SHIELD_RAE_DUX_RIGHT
-	def_bool $(shields_list_contains,rae_dux_right)
+config SHIELD_GOOS_RIGHT
+	def_bool $(shields_list_contains,goos_right)

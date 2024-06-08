@@ -1,0 +1,11 @@
+file_format: "1"
+id: goos
+name: goos
+type: shield
+url: https://github.com/felixbrgm/goos
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - goos_left
+  - goos_right

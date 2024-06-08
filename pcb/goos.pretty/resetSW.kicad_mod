@@ -1,0 +1,227 @@
+(footprint "resetSW"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Two pin through hole Tactile Switch, the same as on the Corne")
+	(tags "Tactile Switch")
+	(property "Reference" "B1"
+		(at 0 2.55 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0a10a3b7-6028-4bc3-b831-43e887e1d414")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 -2.55 90)
+		(layer "F.Fab")
+		(uuid "35c68e0f-8211-4661-977f-6258350f2fda")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ea7fddd0-80fc-46fe-ab4b-2970941ed24f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e1f96e89-a055-4dd4-bb87-79263125f9ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1f44d2b9-1012-4764-b5e0-62ae448f01cc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3 -1.75)
+		(end 3 -1.75)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "117d9d80-866a-4246-8b13-ef678c05bf39")
+	)
+	(fp_line
+		(start -3 -1.5)
+		(end -3 -1.75)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "f7792df7-733d-4b4a-a62d-25cb2e90c1db")
+	)
+	(fp_line
+		(start -3 1.75)
+		(end -3 1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "f1cd72b2-3472-4cb8-85a5-0fe12aa25024")
+	)
+	(fp_line
+		(start 3 -1.75)
+		(end 3 -1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "d9c9faec-8846-4c84-996b-fee89ea603c1")
+	)
+	(fp_line
+		(start 3 1.5)
+		(end 3 1.75)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "85097df7-6262-4f90-badd-078294848783")
+	)
+	(fp_line
+		(start 3 1.75)
+		(end -3 1.75)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "65ff8368-9b40-4cf7-bd21-bea39c77ce28")
+	)
+	(fp_line
+		(start -3 -1.75)
+		(end -3 -1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "490367d9-a47f-46f5-a49b-4eca082a7405")
+	)
+	(fp_line
+		(start -3 -1.75)
+		(end 3 -1.75)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8526b53f-a726-48f2-81bc-3eb23c7d7763")
+	)
+	(fp_line
+		(start -3 1.75)
+		(end -3 1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d7057351-4400-4a47-8d11-b177a8df77b0")
+	)
+	(fp_line
+		(start -3 1.75)
+		(end 3 1.75)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "065223b3-3899-4981-95f7-b49d1c9e8639")
+	)
+	(fp_line
+		(start 3 -1.75)
+		(end 3 -1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5685debc-1eac-47c6-8573-7fe6a5f7efb3")
+	)
+	(fp_line
+		(start 3 1.75)
+		(end 3 1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d39b57f3-d50b-43bc-9072-b3b93b191671")
+	)
+	(fp_text user "RESET"
+		(at 0.127 0 0)
+		(layer "B.SilkS")
+		(uuid "09f5f68f-0893-49ec-85a2-b354f10b4890")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(fp_text user "RESET"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "30808768-e191-43cd-a458-100f1380ff46")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 3.25 0)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "cd0f87f1-d226-4eed-919a-3b0f98de8b71")
+	)
+	(pad "2" thru_hole circle
+		(at -3.25 0)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "3b2e22e5-90f8-4a2e-a735-2c4cd08a3172")
+	)
+)
