@@ -4,4 +4,4 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "rae_dux.dtsi"
+#include "goos.dtsi"
