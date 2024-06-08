@@ -16,6 +16,9 @@ A keyboard inspired by and base on [rae-dux](https://github.com/andrewjrae/rae-d
 If you want to have a look at the keymap just fork this repo and open it with [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
 ![Alpha Layer](https://i.imgur.com/9O0QuCG.png)
 
+`Colemak-DH layer toggled by hitting the combo left-top && left-bottom keys`
+![Colemak-DH Layer](https://i.imgur.com/xnO7uvW.png)
+
 `Symbol layer activated by holding down the right-middle thumb key`
 ![Symbol Layer](https://i.imgur.com/6udqeZL.png)
 
