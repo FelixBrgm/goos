@@ -1224,15 +1224,13 @@
 			)
 		)
 	)
-	(junction
-		(at 49.53 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7298e396-1cdd-4c44-87b8-cd1a82189f07")
-	)
 	(no_connect
 		(at 96.52 105.41)
 		(uuid "582fda73-1f69-42a1-9159-82cf542e1791")
+	)
+	(no_connect
+		(at 44.45 82.55)
+		(uuid "81eb6273-8d80-4058-8e1d-37ebecc47486")
 	)
 	(no_connect
 		(at 96.52 97.79)
@@ -1320,16 +1318,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 74.93) (xy 44.45 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7cc0b66-dcd5-439c-aafa-38b3a1312f2c")
-	)
-	(wire
-		(pts
 			(xy 49.53 74.93) (xy 49.53 82.55)
 		)
 		(stroke
@@ -1337,16 +1325,6 @@
 			(type default)
 		)
 		(uuid "d4e38121-9e9e-410e-abbf-01cce37f3afd")
-	)
-	(wire
-		(pts
-			(xy 44.45 74.93) (xy 49.53 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc0a6020-b962-4598-84f0-c20d4d1e5860")
 	)
 	(text "Marvin\n"
 		(exclude_from_sim no)
@@ -2253,7 +2231,7 @@
 			(uuid "3d417ffe-9756-4bfc-8c3d-86a831d0d169")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR019")
 					(unit 1)
@@ -2320,7 +2298,7 @@
 			(uuid "e28f3ab1-0bb2-4018-8991-5cfa4ec78f97")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR04")
 					(unit 1)
@@ -2387,7 +2365,7 @@
 			(uuid "ea44bb5a-6711-4dfa-8db6-f91d1c22c92f")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR08")
 					(unit 1)
@@ -2463,7 +2441,7 @@
 			(uuid "68a8c262-4ff4-4ac8-a7f4-d416d14a5ce6")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S2")
 					(unit 1)
@@ -2530,7 +2508,7 @@
 			(uuid "d31105fe-46df-461c-80eb-26cfc3466622")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR016")
 					(unit 1)
@@ -2597,7 +2575,7 @@
 			(uuid "88be1ecb-dca4-46da-82e0-6eae257ae344")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR024")
 					(unit 1)
@@ -2673,7 +2651,7 @@
 			(uuid "1ec1768a-e63b-4eba-af8b-7840a5009bac")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S19")
 					(unit 1)
@@ -2740,7 +2718,7 @@
 			(uuid "c3be81bf-204b-4216-9767-6d5c4d78040e")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR05")
 					(unit 1)
@@ -2816,7 +2794,7 @@
 			(uuid "523a65e5-b6f6-4391-a1c2-aa8146a2225c")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S17")
 					(unit 1)
@@ -2884,7 +2862,7 @@
 			(uuid "6c00aeec-96b9-4f45-8cff-b6528a4f0b08")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR014")
 					(unit 1)
@@ -2951,7 +2929,7 @@
 			(uuid "3806df70-e8a5-48ea-a515-0c9edf9ef3e0")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR026")
 					(unit 1)
@@ -3027,7 +3005,7 @@
 			(uuid "17fa3c5a-0809-49ef-a9f3-75b1524581ce")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S14")
 					(unit 1)
@@ -3106,7 +3084,7 @@
 			(uuid "fd14c075-bedf-42ef-981e-49d6cd477451")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "J1")
 					(unit 1)
@@ -3182,7 +3160,7 @@
 			(uuid "5e8d2e0e-10b1-4a65-aded-94cfeb8bbcae")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S5")
 					(unit 1)
@@ -3258,7 +3236,7 @@
 			(uuid "b592d351-01ad-4491-8122-f35d201ebe7b")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S15")
 					(unit 1)
@@ -3334,7 +3312,7 @@
 			(uuid "7764f0ed-96e1-4383-b0cc-2d9440c4ae9c")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S13")
 					(unit 1)
@@ -3401,7 +3379,7 @@
 			(uuid "0faefce3-3852-4575-8833-21cd0c1635dc")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR020")
 					(unit 1)
@@ -3468,7 +3446,7 @@
 			(uuid "3b03e60f-9b13-40c9-b391-5be35859b590")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR03")
 					(unit 1)
@@ -3535,7 +3513,7 @@
 			(uuid "a3ffae58-9e7c-46ae-9fae-905d816058c5")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR021")
 					(unit 1)
@@ -3605,7 +3583,7 @@
 			(uuid "6473a576-f86a-4ec8-bef3-624e5cfc7bb7")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "JP1")
 					(unit 1)
@@ -3681,7 +3659,7 @@
 			(uuid "a6b2a4b9-23d0-4731-8b0a-79e337e9d11f")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S4")
 					(unit 1)
@@ -3757,7 +3735,7 @@
 			(uuid "71d7e5b9-473b-4d87-922c-e63172c3d00c")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S18")
 					(unit 1)
@@ -3833,7 +3811,7 @@
 			(uuid "364709cb-8b2a-4866-9d83-22d9f39a0e82")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S16")
 					(unit 1)
@@ -3909,7 +3887,7 @@
 			(uuid "be605c4b-30a0-4d2f-adb5-f517c84a657a")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S11")
 					(unit 1)
@@ -3985,7 +3963,7 @@
 			(uuid "2f96bb10-0599-4a1f-a81a-9e8e04c59c2b")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S10")
 					(unit 1)
@@ -4061,7 +4039,7 @@
 			(uuid "d58a989b-3864-438a-86e7-4ab0230af54c")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S8")
 					(unit 1)
@@ -4128,7 +4106,7 @@
 			(uuid "0343e726-4ca7-4982-a4b0-edd9cb8bed26")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR025")
 					(unit 1)
@@ -4204,7 +4182,7 @@
 			(uuid "6a308292-a032-416d-9b1f-107f06a6dce0")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S9")
 					(unit 1)
@@ -4271,7 +4249,7 @@
 			(uuid "fd2d76bd-f84e-4184-a2bb-d8831148d05b")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR027")
 					(unit 1)
@@ -4411,7 +4389,7 @@
 			(uuid "8e7c6c31-0ee3-41cc-8aa9-a2bdd747c14b")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "U1")
 					(unit 1)
@@ -4487,7 +4465,7 @@
 			(uuid "76124a0a-0aa4-46b4-962a-e793354033b7")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S3")
 					(unit 1)
@@ -4563,7 +4541,7 @@
 			(uuid "7deb8225-c0fe-4261-bf51-01c95012d042")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S12")
 					(unit 1)
@@ -4645,7 +4623,7 @@
 			(uuid "e1b1842f-a4c3-4dd3-bf23-fd4fbd3fb61b")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S1")
 					(unit 1)
@@ -4712,7 +4690,7 @@
 			(uuid "e75e292d-b579-4b00-b410-9fe376fc3d73")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR013")
 					(unit 1)
@@ -4779,7 +4757,7 @@
 			(uuid "bd637223-2571-4045-83db-34e51ed1975e")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR012")
 					(unit 1)
@@ -4855,7 +4833,7 @@
 			(uuid "dc500dbc-3e71-44b8-b1ea-1f33d5676291")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S6")
 					(unit 1)
@@ -4922,7 +4900,7 @@
 			(uuid "1e2eac91-d1e2-46ab-8781-14c90b7a3e20")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR017")
 					(unit 1)
@@ -4998,7 +4976,7 @@
 			(uuid "bd5c09e4-740a-4a0b-aa3d-4c99fbd9aeed")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "S7")
 					(unit 1)
@@ -5065,7 +5043,7 @@
 			(uuid "544bb8e5-3c4e-4b73-9728-7e9cc4a008bf")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR011")
 					(unit 1)
@@ -5132,7 +5110,7 @@
 			(uuid "dd60b8a0-0af7-4814-b425-bb8c5ff8b7cf")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR018")
 					(unit 1)
@@ -5199,7 +5177,7 @@
 			(uuid "4882d7f9-d469-4a9b-b379-469cebbcca3a")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR09")
 					(unit 1)
@@ -5266,7 +5244,7 @@
 			(uuid "6670484f-3989-48f5-b6a9-b891f5fc16d3")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR07")
 					(unit 1)
@@ -5333,7 +5311,7 @@
 			(uuid "7b4cae20-93a3-410a-9b8c-65386cd406c8")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR023")
 					(unit 1)
@@ -5400,7 +5378,7 @@
 			(uuid "d4e433c3-8c1f-49ff-8cbd-6c07112a3b9a")
 		)
 		(instances
-			(project "goos"
+			(project "goos-left"
 				(path "/5166a8b4-1986-48ab-ae39-a65d6d4ad06b"
 					(reference "#PWR022")
 					(unit 1)
