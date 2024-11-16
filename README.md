@@ -1,3 +1,4 @@
+# We are currently fixing an issues please do not use the pcb files thx!
 # Meet Goos, a minimalistic keyboard
 
 A keyboard inspired by and base on [rae-dux](https://github.com/andrewjrae/rae-dux) with minimalistic black and white asthetic and a wonderfull "goos" designed by [Patrick <3](https://www.github.com/pgorner)
