@@ -2470,7 +2470,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "RST"
-			(at 0 -1.8 270)
+			(at 0 -1.8 -90)
 			(layer "F.SilkS")
 			(uuid "3890077c-0750-41e0-90b9-1ee0f5b2288b")
 			(effects
