@@ -10,7 +10,7 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install yaml2json
         run: python3 -m pip install remarshal
       - id: set-matrix
@@ -45,7 +45,7 @@ jobs:
           echo ::set-output name=artifact-name::${ARTIFACT_NAME}
           echo ::set-output name=display-name::${DISPLAY_NAME}
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache west modules
         uses: actions/cache@v3
         env:
@@ -84,7 +84,7 @@ jobs:
             cp build/zephyr/zmk.hex "build/artifacts/${{ steps.variables.outputs.artifact-name }}.hex"
           fi
       - name: Archive (${{ steps.variables.outputs.display-name }})
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: firmware
+          name: firmware-${{ github.run_id }}-${{ steps.variables.outputs.artifact-name }}
           path: build/artifacts
