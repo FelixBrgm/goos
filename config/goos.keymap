@@ -100,10 +100,10 @@
 
         Tri {
             bindings = <
-&bootloader   &none  &none  &none  &none                  &none  &none           &none  &none  &bootloader
-&bt BT_SEL 0  &none  &none  &none  &none                  &none  &kp LG(LS(N4))  &none  &none  &none
-&bt BT_CLR    &none  &none  &none  &none                  &none  &none           &none  &none  &none
-                            &none  &none  &none    &none  &none  &none
+&bootloader  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR                  &none  &none           &none  &none  &bootloader
+&none        &none         &none         &none         &none                       &none  &kp LG(LS(N4))  &none  &none  &none
+&none        &none         &none         &none         &none                       &none  &none           &none  &none  &none
+                                         &none         &none       &none    &none  &none  &none
             >;
 
             label = "tri_layer";
