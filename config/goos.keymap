@@ -46,7 +46,7 @@
 
         Gamepad {
             bindings = <&tog 5>;
-            key-positions = <8 28>;
+            key-positions = <9 29>;
         };
 
         toggle_colemak {
