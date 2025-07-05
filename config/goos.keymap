@@ -68,6 +68,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp COLON &kp W &kp ENTER>;
             label = "VIM_SAVE";
+            wait-ms = <50>;
         };
     };
 
@@ -117,8 +118,8 @@
         Mouse {
             bindings = <
 &none  &none  &none  &none  &none                      &none      &none           &none           &none            &none
-&none  &none  &none  &none  &none                      &none      &none           &mmv MOVE_DOWN  &none            &none
-&none  &none  &none  &none  &none                      &none      &mmv MOVE_LEFT  &msc SCRL_UP    &mmv MOVE_RIGHT  &none
+&none  &none  &none  &none  &none                      &none      &none           &mmv MOVE_UP    &none            &none
+&none  &none  &none  &none  &none                      &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
                      &none  &none  &none    &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
