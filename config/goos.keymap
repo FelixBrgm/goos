@@ -79,10 +79,10 @@
 
         Symbol {
             bindings = <
-&none                          &kp SINGLE_QUOTE             &kp DOLLAR               &kp AMPERSAND               &kp CARET                    &none          &kp POUND               &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &none
-&hrm LEFT_CONTROL EXCLAMATION  &hrm LEFT_ALT DOUBLE_QUOTES  &hrm LEFT_COMMAND MINUS  &hrm LEFT_SHIFT UNDERSCORE  &kp PLUS                     &kp PLUS       &hrm RIGHT_SHIFT ASTRK  &hrm RIGHT_COMMAND LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_CONTROL PERCENT
-&none                          &kp GRAVE                    &kp PIPE                 &kp EQUAL                   &kp TILDE                    &kp BACKSLASH  &kp AT_SIGN             &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &none
-                                                                                     &kp ESC                     &mo 3      &kp TAB    &none  &none          &none
+&none                          &kp SINGLE_QUOTE             &kp DOLLAR               &kp AMPERSAND               &kp CARET                    &none        &kp POUND               &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &none
+&hrm LEFT_CONTROL EXCLAMATION  &hrm LEFT_ALT DOUBLE_QUOTES  &hrm LEFT_COMMAND MINUS  &hrm LEFT_SHIFT UNDERSCORE  &kp PLUS                     &kp AT_SIGN  &hrm RIGHT_SHIFT ASTRK  &hrm RIGHT_COMMAND LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_CONTROL PERCENT
+&none                          &kp GRAVE                    &kp PIPE                 &kp EQUAL                   &kp TILDE                    &none        &kp BACKSLASH           &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &none
+                                                                                     &kp ESC                     &mo 3      &kp TAB    &none  &none        &none
             >;
 
             label = "symbol_layer";
@@ -116,6 +116,15 @@
 &kp TAB  &kp A  &kp S  &kp D      &kp F                      &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
 &none    &kp Y  &kp X  &kp C      &none                      &none  &kp S     &none     &kp E      &none
                        &kp LSHFT  &kp SPACE  &none    &kp B  &kp A  &none
+            >;
+        };
+
+        Mouse {
+            bindings = <
+&none  &none  &none  &none  &none                  &none           &none           &none         &none            &none
+&none  &none  &none  &none  &none                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none  &none  &none  &none                  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                     &none  &none  &none    &none  &none           &none
             >;
         };
     };
