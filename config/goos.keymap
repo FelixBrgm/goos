@@ -17,7 +17,7 @@
 
         Tri {
             if-layers = <3 2>;
-            then-layer = <4>;
+            then-layer = <5>;
         };
     };
 
@@ -46,7 +46,7 @@
         compatible = "zmk,combos";
 
         Gamepad {
-            bindings = <&tog 5>;
+            bindings = <&tog 6>;
             key-positions = <9 29>;
         };
 
@@ -64,7 +64,7 @@
 &kp Q                &kp W            &kp F                &kp P              &kp B                              &kp J            &kp L               &kp U                 &kp Y             &kp SEMICOLON
 &hrm LEFT_CONTROL A  &hrm LEFT_ALT R  &hrm LEFT_COMMAND S  &hrm LEFT_SHIFT T  &kp G                              &kp M            &hrm RIGHT_SHIFT N  &hrm RIGHT_COMMAND E  &hrm RIGHT_ALT I  &hrm RIGHT_CONTROL O
 &kp Z                &kp X            &kp C                &kp D              &kp V                              &kp K            &kp H               &kp COMMA             &kp DOT           &kp SLASH
-                                                           &kp ESC            &lt 3 SPACE  &kp TAB    &kp ENTER  &lt 2 SEMICOLON  &kp BSPC
+                                                           &lt 4 ESC          &lt 3 SPACE  &kp TAB    &kp ENTER  &lt 2 SEMICOLON  &kp BSPC
             >;
         };
 
@@ -99,11 +99,20 @@
             label = "numb_nav_layer";
         };
 
+        Mouse {
+            bindings = <
+&none  &none  &none  &none  &none                      &none           &none           &none         &none            &none
+&none  &none  &none  &none  &none                      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none  &none  &none  &none                      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                     &none  &none  &none    &mkp RCLK  &mkp LCLK       &mkp MCLK
+            >;
+        };
+
         Tri {
             bindings = <
-&bootloader  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR                  &none  &none           &none         &none  &bootloader
-&none        &none         &none         &none         &none                       &none  &mmv MOVE_DOWN  &mmv MOVE_UP  &none  &none
-&none        &none         &none         &none         &none                       &none  &none           &none         &none  &none
+&bootloader  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR                  &none  &none  &none  &none  &bootloader
+&none        &none         &none         &none         &none                       &none  &none  &none  &none  &none
+&none        &none         &none         &none         &none                       &none  &none  &none  &none  &none
                                          &none         &none       &none    &none  &none  &none
             >;
 
@@ -116,15 +125,6 @@
 &kp TAB  &kp A  &kp S  &kp D      &kp F                      &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
 &none    &kp Y  &kp X  &kp C      &none                      &none  &kp S     &none     &kp E      &none
                        &kp LSHFT  &kp SPACE  &none    &kp B  &kp A  &none
-            >;
-        };
-
-        Mouse {
-            bindings = <
-&none  &none  &none  &none  &none                  &none           &none           &none         &none            &none
-&none  &none  &none  &none  &none                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&none  &none  &none  &none  &none                  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-                     &none  &none  &none    &none  &none           &none
             >;
         };
     };
