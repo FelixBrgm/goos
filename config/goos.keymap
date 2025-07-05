@@ -50,9 +50,24 @@
             key-positions = <9 29>;
         };
 
-        toggle_colemak {
+        toggle_layout {
             bindings = <&tog 1>;
             key-positions = <0 20>;
+        };
+
+        vim_save {
+            bindings = <&vim_save>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+    };
+
+    macros {
+        vim_save: vim_save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp ENTER>;
+            label = "VIM_SAVE";
         };
     };
 
