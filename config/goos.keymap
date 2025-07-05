@@ -101,9 +101,9 @@
 
         Tri {
             bindings = <
-&bootloader  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR                  &none  &none           &none             &none  &bootloader
-&none        &none         &none         &none         &none                       &none  &kp LG(LS(N4))  &mmv MOVE_X(300)  &none  &none
-&none        &none         &none         &none         &none                       &none  &none           &none             &none  &none
+&bootloader  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR                  &none  &none           &none         &none  &bootloader
+&none        &none         &none         &none         &none                       &none  &mmv MOVE_DOWN  &mmv MOVE_UP  &none  &none
+&none        &none         &none         &none         &none                       &none  &none           &none         &none  &none
                                          &none         &none       &none    &none  &none  &none
             >;
 
