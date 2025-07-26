@@ -61,6 +61,11 @@
             key-positions = <21 22>;
             layers = <0>;
         };
+
+        lock {
+            bindings = <&kp K_LOCK>;
+            key-positions = <30 32 31>;
+        };
     };
 
     macros {
