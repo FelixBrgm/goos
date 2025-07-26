@@ -79,7 +79,7 @@
         alpha_colemak_dh {
             bindings = <
 &kp Q                &kp W            &kp F                &kp P                          &kp B                              &kp J           &kp L               &kp U                &kp Y            &kp SEMICOLON
-&hrm LEFT_CONTROL A  &hrm LEFT_ALT R  &hrm LEFT_COMMAND S  &hrm LEFT_SHIFT T              &kp G                              &kp M           &hrm RIGHT_SHIFT N  &hrm LEFT_COMMAND E  &hrm LEFT_ALT I  &hrm LEFT_CONTROL O
+&hrm LEFT_COMMAND A  &hrm LEFT_ALT R  &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T              &kp G                              &kp M           &hrm RIGHT_SHIFT N  &hrm LEFT_CONTROL E  &hrm LEFT_ALT I  &hrm LEFT_GUI O
 &kp Z                &kp X            &kp C                &kp D                          &kp V                              &kp K           &kp H               &kp COMMA            &kp DOT          &kp SLASH
                                                            &hrm LA(LG(LEFT_CONTROL)) ESC  &lt 3 SPACE  &kp TAB    &kp ENTER  &lt_repeat 2 0  &kp BSPC
             >;
@@ -87,19 +87,19 @@
 
         alpha_qwerty {
             bindings = <
-&kp Q                &kp W            &kp E                &kp R              &kp T                              &kp Y           &kp U               &kp I                &kp O            &kp P
-&hrm LEFT_CONTROL A  &hrm LEFT_ALT S  &hrm LEFT_COMMAND D  &hrm LEFT_SHIFT F  &kp G                              &kp H           &hrm RIGHT_SHIFT J  &hrm LEFT_COMMAND K  &hrm LEFT_ALT L  &hrm LEFT_CONTROL SEMICOLON
-&kp Z                &kp X            &kp C                &kp V              &kp B                              &kp N           &kp M               &kp COMMA            &kp DOT          &kp SLASH
-                                                           &lt 0 ESC          &lt 3 SPACE  &kp TAB    &kp ENTER  &lt_repeat 2 0  &kp BSPC
+&kp Q            &kp W            &kp E                &kp R              &kp T                              &kp Y           &kp U               &kp I                &kp O            &kp P
+&hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LEFT_CONTROL D  &hrm LEFT_SHIFT F  &kp G                              &kp H           &hrm RIGHT_SHIFT J  &hrm LEFT_CONTROL K  &hrm LEFT_ALT L  &hrm LEFT_GUI SEMICOLON
+&kp Z            &kp X            &kp C                &kp V              &kp B                              &kp N           &kp M               &kp COMMA            &kp DOT          &kp SLASH
+                                                       &lt 0 ESC          &lt 3 SPACE  &kp TAB    &kp ENTER  &lt_repeat 2 0  &kp BSPC
             >;
         };
 
         Symbol {
             bindings = <
-&none                          &kp SINGLE_QUOTE             &kp DOLLAR               &kp AMPERSAND               &kp CARET                    &none        &kp POUND               &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                &none
-&hrm LEFT_CONTROL EXCLAMATION  &hrm LEFT_ALT DOUBLE_QUOTES  &hrm LEFT_COMMAND MINUS  &hrm LEFT_SHIFT UNDERSCORE  &kp PLUS                     &kp AT_SIGN  &hrm RIGHT_SHIFT ASTRK  &hrm LEFT_COMMAND LEFT_PARENTHESIS  &hrm LEFT_ALT RIGHT_PARENTHESIS  &hrm LEFT_CONTROL PERCENT
-&none                          &kp GRAVE                    &kp PIPE                 &kp EQUAL                   &kp TILDE                    &none        &kp BACKSLASH           &kp LEFT_BRACE                      &kp RIGHT_BRACE                  &none
-                                                                                     &kp ESC                     &mo 3      &kp TAB    &none  &none        &none
+&none                      &kp SINGLE_QUOTE             &kp DOLLAR               &kp AMPERSAND               &kp CARET                    &none        &kp POUND               &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                &none
+&hrm LEFT_GUI EXCLAMATION  &hrm LEFT_ALT DOUBLE_QUOTES  &hrm LEFT_CONTROL MINUS  &hrm LEFT_SHIFT UNDERSCORE  &kp PLUS                     &kp AT_SIGN  &hrm RIGHT_SHIFT ASTRK  &hrm LEFT_CONTROL LEFT_PARENTHESIS  &hrm LEFT_ALT RIGHT_PARENTHESIS  &hrm LEFT_GUI PERCENT
+&none                      &kp GRAVE                    &kp PIPE                 &kp EQUAL                   &kp TILDE                    &none        &kp BACKSLASH           &kp LEFT_BRACE                      &kp RIGHT_BRACE                  &none
+                                                                                 &kp ESC                     &mo 3      &kp TAB    &none  &none        &none
             >;
 
             label = "symbol_layer";
@@ -107,10 +107,10 @@
 
         Numbers_Navigation {
             bindings = <
-&none                 &kp NUMBER_9      &kp NUMBER_8          &kp NUMBER_7        &kp MINUS                      &kp C_BRI_UP  &kp C_MUTE             &kp C_VOLUME_DOWN     &kp C_VOLUME_UP      &none
-&hrm LEFT_CONTROL N0  &hrm LEFT_ALT N3  &hrm LEFT_COMMAND N2  &hrm LEFT_SHIFT N1  &kp PLUS                       &kp LEFT      &hrm RIGHT_SHIFT DOWN  &hrm LEFT_COMMAND UP  &hrm LEFT_ALT RIGHT  &kp LEFT_CONTROL
-&none                 &kp NUMBER_6      &kp NUMBER_5          &kp NUMBER_4        &kp STAR                       &kp C_BRI_DN  &kp C_PREV             &kp C_PP              &kp C_NEXT           &none
-                                                              &none               &none      &none    &kp ENTER  &mo 2         &kp BSPC
+&none             &kp NUMBER_9      &kp NUMBER_8          &kp NUMBER_7        &kp MINUS                      &kp C_BRI_UP  &kp C_MUTE             &kp C_VOLUME_DOWN     &kp C_VOLUME_UP      &none
+&hrm LEFT_GUI N0  &hrm LEFT_ALT N3  &hrm LEFT_CONTROL N2  &hrm LEFT_SHIFT N1  &kp PLUS                       &kp LEFT      &hrm RIGHT_SHIFT DOWN  &hrm LEFT_CONTROL UP  &hrm LEFT_ALT RIGHT  &kp LEFT_GUI
+&none             &kp NUMBER_6      &kp NUMBER_5          &kp NUMBER_4        &kp STAR                       &kp C_BRI_DN  &kp C_PREV             &kp C_PP              &kp C_NEXT           &none
+                                                          &none               &none      &none    &kp ENTER  &mo 2         &kp BSPC
             >;
 
             label = "numb_nav_layer";
